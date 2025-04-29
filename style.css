@@ -315,6 +315,67 @@ body {
 #index > .index_part_3 > .content > span {
   font-family: def-reg;
 }
+#index > .index_part_4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  gap: 2rem;
+}
+#index > .index_part_4 > h1 {
+  font-family: def-reg;
+  font-size: 2rem;
+  color: #cc9322;
+}
+#index > .index_part_4 > .content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#index > .index_part_4 > .content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 10rem;
+  width: calc(50% - 1rem);
+  text-align: center;
+}
+#index > .index_part_4 > .content > div > span {
+  font-weight: 600;
+}
+#index > .index_part_4 > .content > div > svg {
+  height: 7rem;
+}
+#index > .index_part_4 > .content > div > svg * {
+  fill: #2fbd7d;
+}
+#index > .index_part_4 > .content > div:nth-last-child(1) > svg {
+  height: 6rem;
+}
+#index > .index_part_5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #16583a;
+  width: 95%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  box-shadow: 0 0 10px #696767;
+  margin-top: auto;
+}
+#index > .index_part_5 * {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
 
 .footer_obsitrail {
   margin-top: auto;
