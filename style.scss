@@ -3,6 +3,12 @@
 $color1: #16583a;
 $color1dark: #0f3b27;
 $media_sm: 480px;
+
+@font-face {
+  font-family: "def-reg";
+  src: url("/files/Nexa-XBold.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,7 +43,7 @@ body {
   height: 4rem;
   // position: sticky;
   backdrop-filter: blur(10px);
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   z-index: 5;
@@ -96,7 +102,7 @@ body {
     align-items: flex-start;
     // height: 99dvh;
     // height: calc(100dvh - 4rem);
-    height: calc(100dvh);
+    height: calc(100vh - 4rem);
     position: relative;
     overflow: hidden;
     padding: 0.5rem;
@@ -117,11 +123,20 @@ body {
       }
     }
 
+    > h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: auto;
+      margin-top: 1rem;
+    }
+
     > a {
       background-color: #fff;
       height: 3rem;
+      margin-bottom: 4rem;
       // overflow: hidden;
-      margin-bottom: 3rem;
+      // margin-top: auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -137,10 +152,9 @@ body {
       }
     }
 
-    > h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: $color1;
+    > span {
+      // margin-top: auto;
+      color: white;
     }
   }
 
