@@ -112,7 +112,7 @@ body {
 #index > .index_part_1 > h1 {
   font-size: 3.5rem;
   font-weight: 600;
-  color: white;
+  color: #0f3b27;
   margin-bottom: auto;
   margin-top: 1rem;
   font-family: def-reg;
@@ -150,8 +150,9 @@ body {
 #index > .index_part_2 > .content {
   margin-top: 2rem;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 #index > .index_part_2 > .content > .item {
   border: 2px solid #16583a;
@@ -180,36 +181,65 @@ body {
 #index > .index_part_2 > .content > .item:nth-child(3) > .footer > a {
   background-color: #cc9322;
 }
+#index > .index_part_2 > .content > .item:nth-child(4) {
+  border: 2px solid #16583a;
+  background-color: #16583a;
+}
+#index > .index_part_2 > .content > .item:nth-child(4) > .header {
+  background-color: #16583a;
+}
+#index > .index_part_2 > .content > .item:nth-child(4) > .content * {
+  color: white;
+}
+#index > .index_part_2 > .content > .item:nth-child(4) > .footer > a {
+  background-color: white;
+  color: #0f3b27;
+}
+#index > .index_part_2 > .content > .item:nth-child(4) > .footer > a > span {
+  font-weight: 600;
+}
+#index > .index_part_2 > .content > .item:nth-child(4) > .footer > a > svg {
+  height: 45%;
+}
+#index > .index_part_2 > .content > .item:nth-child(4) > .footer > a svg,
+#index > .index_part_2 > .content > .item:nth-child(4) > .footer > a g,
+#index > .index_part_2 > .content > .item:nth-child(4) > .footer > a path {
+  fill: #0f3b27 !important;
+}
 #index > .index_part_2 > .content > .item {
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
+  width: calc(50% - 0.5rem);
 }
 #index > .index_part_2 > .content > .item > .header {
   display: flex;
   height: 2.5rem;
   color: #fff;
   align-items: center;
-  gap: 1rem;
+  line-height: 120%;
+  gap: 0.5rem;
   padding: 0.35rem 0.5rem;
   width: 100%;
 }
 #index > .index_part_2 > .content > .item > .header > h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 #index > .index_part_2 > .content > .item > .header > img {
-  height: 100%;
+  height: 70%;
 }
 #index > .index_part_2 > .content > .item > .content {
-  height: 6rem;
+  height: 9rem;
   width: 100%;
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding: 0.25rem 0.5rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
 }
 #index > .index_part_2 > .content > .item > .content > span {
   font-family: def-reg;
